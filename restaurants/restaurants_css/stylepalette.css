@@ -11,6 +11,8 @@
 }
 .img_entete{
     width:100%;
+    position: relative;
+    z-index: 1;
 }
 
 /*********************************************************
@@ -20,7 +22,7 @@ h1{
     font-size:70px;
     width:66%;
     text-align:center;
-    padding-top:90px;
+    padding-top:20px;
 }
 h2{
     font-size:55px;
@@ -32,9 +34,12 @@ h2{
 .menu{
     background-color: #f2f2f2;
     border-radius:116px;
+    position: absolute;
+    z-index: 2;
+    top:636px;
 }
 .carte_menu{
-    border: 1px solid gray;
+    border: 1px solid #f2f2f2;
     border-radius: 30px;
     font-size: 45px;
     padding-left:20px;
@@ -45,6 +50,7 @@ h2{
     flex-wrap: wrap;
     flex-direction: row;
     height:164px;
+    width:92%;
 }
 .p1 {
     width:100%;
@@ -54,9 +60,11 @@ h2{
 }
 .p2{
     margin-right:auto;
+    font-weight:normal;
 }
 .p3{
     margin-right:40px;
+    font-weight:normal;
 }
 .btn{
     background-color: #9356DC;
@@ -80,14 +88,16 @@ h2{
     padding-bottom:30px;
 }
 .logo_footer{
-    margin-left:30px;
-    padding-top:30px;
+    margin-left:56px;
+    padding-top:50px;
 }
 .rest_p{
     display: flex;
     height:47px;
     width:36%;
-    margin-top:10px;
+    margin-top:20px;
+    margin-left: 30px;
+    text-decoration:none;
 }
 .rest_parte{
     display:flex;
@@ -96,6 +106,10 @@ h2{
     margin-left:30px;
     font-size: 30px;
     color:white;
+    font-size:26px;
+}
+.rest_parteB{
+    font-size:24px;
 }
 .rest_parte i{
     margin-right:10px;
@@ -104,4 +118,17 @@ h2{
 .rest_parte p{
     margin-top:10px;
     margin-bottom:10px;
+    
+}
+/*.mention {
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    font-size:22px;
+}*/
+.mention_p{
+    display:flex;
+    text-decoration:none;
+    margin-top:20px;
+    margin-left: 30px;
 }
