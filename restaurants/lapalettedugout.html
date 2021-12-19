@@ -7,8 +7,14 @@
     <link rel="stylesheet" type="text/css" href="restaurants_css/stylepalette.css">
     <script src="https://kit.fontawesome.com/9e550c3a4e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+    <header class="header">
+        <a class="retour" href="../index.html" rel="Retour page d'acceuil">
+            <div>
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </a>
         <div class="logo">
             <img class="logo_header" src="../images/logo/OhmyfoodB.png">
         </div>
@@ -19,15 +25,15 @@
             <img class="img_entete" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
         </div>
         <section class="menu">
-            <h1>La palette du goût</h1>
-            <div class="coeur">
+            <div class="palette">
+                <h1>La palette du goût</h1>
                 <i class="far fa-heart"></i>
-            </div> 
+            </div>
             <div class="container_carte">
 
-                <h2>Entrées<h2>
+                <h2>Entrées</h2>
                 <div class="carte_menu">
-                    <div class="p1">                        
+                    <div class="p1">
                         <p><strong>Fricassée d'escargot</strong></p>
                     </div>
                     <div class="p2">
@@ -37,6 +43,7 @@
                         <p>25€</p>
                     </div>
                 </div>
+                <!--<i class="fas fa-check-circle"></i> icone valider slider-->
                 <div class="carte_menu">
                     <div class="p1">
                         <p><strong>Foie gras de canard mi-cuit</strong></p>
@@ -60,7 +67,7 @@
                     </div>
                 </div>
 
-                <h2>Plats<h2>
+                <h2>Plats</h2>
 
                 <div class="carte_menu">
                     <div class="p1">
@@ -73,6 +80,7 @@
                         <p>40€</p>
                     </div>
                 </div>
+
                 <div class="carte_menu">
                     <div class="p1">
                         <p><strong>Parmentier de queue de boeuf</strong></p>
@@ -84,6 +92,7 @@
                         <p>35€</p>
                     </div>
                 </div>
+
                 <div class="carte_menu">
                     <div class="p1">
                         <p><strong>Filet de turbot</strong></p>
@@ -109,6 +118,7 @@
                         <p>18€</p>
                     </div>
                 </div>
+
                 <div class="carte_menu">
                     <div class="p1">
                         <p><strong>Macaron au chocolat d'exception</strong></p>
@@ -131,46 +141,48 @@
                         <p>23€</p>
                     </div>
                 </div>
-                <a class="commander" href="#" target="_blank" rel="La palette du goût">
+
+                <a class="commander" href="#" rel="La palette du goût">
                     <button class="btn" name="Commander">
                         <span class="textbtn">Commander</span>
                     </button>
                 </a>
 
-        </div>    
-        
-        <footer class="foot">
-            <div class="logo_footer">
-                <img class="logo_header" src="images/logo/Ohmyfood.png">
             </div>
-            <a class="rest_p" href="#" target="_blank" rel="Proposez un restaurant">
-                <div class="rest_parte">
-                    <i class="fas fa-utensils"></i>
-                    <p>Proposez un restaurant</p>
-                </div>
-            </a>
-    
-            <a class="rest_p" href="#" target="_blank" rel="Devenir partenaire">
-                <div class="rest_parte">
-                    <i class="fas fa-hands-helping"></i>
-                    <p>Devenir partenaire</p>
-                </div>
-            </a>
-    
-            <!--<div class="mention">-->
-            <a class="mention_p" href="#" target="_blank" rel="Mentions légale">
-                <div class="rest_parte">
-                    <p>Mentions légale</p>
-                </div>
-            </a>
-            <a class="mention_p" href="#" target="_blank" rel="Contact">
-                <div class="rest_parte">
-                    <p>Contact</p>
-                </div>
-            </a>
-            <!--</div>-->
-    
-        </footer>
+        </section>
+    </div>
+    <footer class="foot">
+        <div class="logo_footer">
+            <img class="logo_header" src="../images/logo/Ohmyfood.png">
+        </div>
+        <a class="rest_p" href="#" target="_blank" rel="Proposez un restaurant">
+            <div class="rest_parte">
+                <i class="fas fa-utensils"></i>
+                <p>Proposez un restaurant</p>
+            </div>
+        </a>
+
+        <a class="rest_p" href="#" target="_blank" rel="Devenir partenaire">
+            <div class="rest_parte">
+                <i class="fas fa-hands-helping"></i>
+                <p>Devenir partenaire</p>
+            </div>
+        </a>
+
+        <!--<div class="mention">-->
+        <a class="mention_p" href="#" target="_blank" rel="Mentions légale">
+            <div class="rest_parte">
+                <p>Mentions légale</p>
+            </div>
+        </a>
+        <a class="mention_p" href="#" target="_blank" rel="Contact">
+            <div class="rest_parte">
+                <p>Contact</p>
+            </div>
+        </a>
+        <!--</div>-->
+
+    </footer>
 </body>
-    
+
 </html>
