@@ -88,7 +88,7 @@ h2 {
   font-weight: normal;
 }
 .p3 {
-  margin-right: 40px;
+  /*margin-right: 40px;*/
   font-weight: normal;
 }
 .btn {
@@ -108,10 +108,22 @@ h2 {
 /****************************************************************
 ****************************animation slide**********************
 *****************************************************************/
-.slide-left {
+.slide-left:hover {
+  background-color: #99e2d0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+/*.slide-left {
+  background-color: #99e2d0;
+  /*padding-left: 80px;
+  height: 150px;*/
+/* white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}*/
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
@@ -136,8 +148,12 @@ h2 {
 **************************rotation-slider******************
 **********************************************************/
 .rotate-center {
+  opacity: 0;
+}
+.rotate-center:hover {
   -webkit-animation: rotate-center 1s ease-in-out reverse;
   animation: rotate-center 1s ease-in-out reverse;
+  opacity: 1;
 }
 
 @-webkit-keyframes rotate-center {
