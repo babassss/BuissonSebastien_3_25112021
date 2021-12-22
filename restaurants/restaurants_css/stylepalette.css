@@ -49,9 +49,9 @@ h2 {
 .menu {
   background-color: #f2f2f2;
   border-radius: 116px 116px 0px 0px;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 636px;
+  top: -124px;
 }
 .palette {
   display: flex;
