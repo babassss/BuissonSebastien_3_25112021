@@ -38,10 +38,44 @@ h1 {
   padding-left: 20px;
 }
 h2 {
-  font-size: 55px;
+  font-size: 54px;
   margin-left: 30px;
   border-bottom: 8px solid #99e2d0;
   width: 12%;
+}
+
+/*********************************************************
+************************Coeur*****************************
+*********************************************************/
+.coeur {
+  position: absolute;
+  z-index: 2;
+  right: 50px;
+  top: 90px;
+  font-size: 50px;
+}
+.coeur-noir {
+  font-size: 50px;
+  position: absolute;
+  transition: opacity 2s;
+  padding-top: 2px;
+}
+.coeur-noir:hover + .coeur-rose {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.coeur-noir:hover {
+  opacity: 0;
+}
+.coeur-rose {
+  z-index: 1;
+  transform: scale(0);
+  font-size: 50px;
+  width: 108%;
+  background: linear-gradient(#ff79da, #9356dc);
+  transition: opacity 1s, transform 1s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*********************************************************
 ***********************carte-menu************************
@@ -69,35 +103,54 @@ h2 {
   font-size: 45px;
   padding-left: 20px;
   margin-bottom: 20px;
+  margin-left: 28px;
   background-color: white;
   display: flex;
   align-items: baseline;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 164px;
   width: 92%;
+}
+.cartedescription {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .p1 {
   width: 100%;
   margin: 0;
-  width: 100%;
-  height: 55px;
+  width: 70%;
+  height: 66%;
+  margin-bottom: 30px;
 }
-.p2 {
+.p1 p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/*.p2 {
   margin-right: auto;
   font-weight: normal;
+}*/
+.test {
+  display: flex;
 }
 .p3 {
-  /*margin-right: 40px;*/
-  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  width: 15%;
 }
 .btn {
   background: linear-gradient(#ff79da, #9356dc);
-  border-radius: 40px;
+  border-radius: 200px;
   font-size: 36px;
   height: 94px;
-  width: 50%;
+  width: 38%;
   color: white;
+  margin-left: 300px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 .commander {
   display: flex;
@@ -108,30 +161,32 @@ h2 {
 /****************************************************************
 ****************************animation slide**********************
 *****************************************************************/
+.slide-left {
+  background-color: #99e2d0;
+  height: 100%;
+  opacity: 0;
+  border-radius: 0px 20px 20px 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 87px;
+}
 .slide-left:hover {
   background-color: #99e2d0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  opacity: 1;
   -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-/*.slide-left {
-  background-color: #99e2d0;
-  /*padding-left: 80px;
-  height: 150px;*/
-/* white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}*/
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
+    opacity: 1;
   }
 }
 @keyframes slide-left {
@@ -148,32 +203,37 @@ h2 {
 **************************rotation-slider******************
 **********************************************************/
 .rotate-center {
-  opacity: 0;
+  opacity: 1;
+  color: #fff;
 }
 .rotate-center:hover {
   -webkit-animation: rotate-center 1s ease-in-out reverse;
-  animation: rotate-center 1s ease-in-out reverse;
+  animation: rotate-center 0.5s ease-in-out reverse;
   opacity: 1;
 }
 
 @-webkit-keyframes rotate-center {
   0% {
+    -webkit-transform: translateX(-50px);
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: translateX(-50px);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 }
 @keyframes rotate-center {
   0% {
+    -webkit-transform: translateX(-50px);
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: translateX(-50px);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 }
 /**********************************************************
