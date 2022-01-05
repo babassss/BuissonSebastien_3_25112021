@@ -1,6 +1,7 @@
 /*********************************************************
 ***********************Mobile-firt************************
 **********************************************************/
+/*@media screen and (max-device-width: 812px) {*/
 body {
   font-family: "roboto", sans-serif;
   margin: 0;
@@ -56,8 +57,8 @@ body {
   right: -6px;
   bottom: -6px;
   border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: black;
+  border: 6px solid #9356dc;
+  border-top-color: #ff79da;
   animation: spin 1s linear infinite;
 }
 
@@ -69,7 +70,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 /********************************************************
 *********************************************************
 ********************************************************/
@@ -144,7 +144,7 @@ body {
 }
 .rechercher p {
   font-size: 45px;
-  width: 75%;
+  width: 82%;
   text-align: center;
 }
 .search {
@@ -164,12 +164,15 @@ body {
   width: 100%;
   color: white;
 }
+.btn:hover {
+  box-shadow: 3px 3px 10px 6px #c4bebf;
+}
 /*********************************************************
 *************************Titres***************************
 **********************************************************/
 h1 {
   font-size: 70px;
-  width: 66%;
+  width: 75%;
   text-align: center;
 }
 h2 {
@@ -192,7 +195,7 @@ h2 {
   margin: 0;
   position: absolute;
   right: 80px;
-  top: 1710px;
+  top: 1650px;
   border-radius: 8px;
 }
 .news2 {
@@ -202,7 +205,7 @@ h2 {
   margin: 0;
   position: absolute;
   right: 80px;
-  top: 1710px;
+  top: 2338px;
   border-radius: 8px;
 }
 .carte2 {
@@ -272,6 +275,10 @@ h2 {
   margin-left: 56px;
   padding-top: 50px;
 }
+.group {
+  display: flex;
+  flex-direction: column;
+}
 .rest_p {
   display: flex;
   height: 47px;
@@ -305,12 +312,13 @@ h2 {
   text-decoration: none;
   margin-top: 20px;
   margin-left: 30px;
+  width: 24%;
 }
+/*}*/
 /*********************************************
  ***********Responsive*tablette**************
 *********************************************/
-
-/*@media screen and (min-width: 812px) and (max-width: 1080px) {
+@media screen and (min-width: 813px) {
   .container_carte {
     display: flex;
     justify-content: space-between;
@@ -336,12 +344,14 @@ h2 {
   }
   h1 {
     font-size: 40px;
+    margin-bottom: 0;
   }
   h2 {
     font-size: 35px;
   }
   .rechercher p {
     font-size: 35px;
+    margin-top: 8px;
   }
   .explo {
     width: 36%;
@@ -352,7 +362,7 @@ h2 {
   /*************************************************
   ********************Container*menu****************
   **************************************************/
-/*.container_carte2 {
+  .container_carte2 {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -364,12 +374,12 @@ h2 {
     margin-bottom: 30px;
   }
   .news {
-    top: 1034px;
+    top: 930px;
     left: 310px;
     right: 560px;
   }
   .news2 {
-    top: 1034px;
+    top: 930px;
     right: 70px;
   }
   .news,
@@ -382,10 +392,15 @@ h2 {
   }
   .cartedescription {
     font-size: 30px;
-    height: 150px;
+    height: 100px;
+  }
+  .cartedescription p {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .coeur {
     font-size: 30px;
+    top: 54px;
   }
   .coeur i {
     font-size: 30px;
@@ -393,7 +408,106 @@ h2 {
   /*******************************************************
   ***********************footer***************************
   ********************************************************/
-/*.rest_parte {
+  .rest_parte {
     font-size: 20px;
   }
-}*/
+  .rest_parte,
+  .rest_p,
+  .mention_p {
+    margin-top: 0;
+  }
+}
+
+/***********************************************************
+************************Version*Desktop*********************
+***********************************************************/
+@media screen and (min-device-width: 1081px) {
+  .formu i {
+    font-size: 28px;
+  }
+  .search {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .rechercher p {
+    font-size: 35px;
+    width: 50%;
+  }
+  .carte1 {
+    width: 64%;
+    font-size: 30px;
+  }
+  .cercle {
+    width: 16px;
+    height: 16px;
+    left: -24px;
+    top: 25px;
+  }
+  .carte1 i {
+    font-size: 36px;
+  }
+  .btn {
+    height: 70px;
+  }
+  /*****************************************************************
+***************************Conteiner_carte2***********************
+*****************************************************************/
+  .container_carte2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+  }
+  .carte2 {
+    border: 1px solid grey;
+    width: 80%;
+    margin-left: 76px;
+    margin-bottom: 40px;
+  }
+  .news {
+    top: 920px;
+    left: 560px;
+    right: auto;
+  }
+  .news2 {
+    top: 920px;
+    right: 96px;
+  }
+  .img_resto {
+    height: 300px;
+  }
+  .cartedescription {
+    height: 100px;
+    font-size: 30px;
+  }
+  /***************************************************************
+****************************Footer******************************
+***************************************************************/
+  .logo_f {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rest_p {
+    width: 70%;
+  }
+  .rest_parte {
+    margin-left: 64px;
+  }
+  .rest_parte p {
+    width: 284px;
+  }
+  .mention_p {
+    margin-left: 0;
+  }
+  .group {
+    height: 84px;
+    flex-direction: row;
+  }
+}
