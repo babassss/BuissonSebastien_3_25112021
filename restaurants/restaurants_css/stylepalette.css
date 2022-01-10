@@ -11,19 +11,21 @@ body {
 }
 .retour {
   display: flex;
-  font-size: 45px;
-  margin-left: 76px;
+  font-size: 20px;
+  margin-left: 20px;
   color: black;
-  margin-right: 80px;
 }
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 42%;
-  margin-top: 40px;
+  margin-top: 22px;
   margin-bottom: 30px;
   margin-left: 100px;
+}
+.logo_header {
+  height: 34px;
 }
 .img_entete {
   width: 100%;
@@ -36,7 +38,7 @@ body {
 **********************************************************/
 h1 {
   font-family: "shrikhand", kursiv;
-  font-size: 76px;
+  font-size: 34px;
   font-weight: bold;
   font-style: italic;
   width: 70%;
@@ -45,8 +47,8 @@ h1 {
   padding-left: 20px;
 }
 h2 {
-  font-size: 54px;
-  margin-left: 30px;
+  font-size: 24px;
+  margin-left: 14px;
   border-bottom: 8px solid #99e2d0;
   width: 12%;
 }
@@ -57,9 +59,9 @@ h2 {
 .coeur {
   position: absolute;
   z-index: 2;
-  right: 50px;
-  top: 90px;
-  font-size: 50px;
+  right: 28px;
+  top: 56px;
+  font-size: 26px;
 }
 .coeur-noir {
   font-size: 50px;
@@ -77,7 +79,7 @@ h2 {
 .coeur-rose {
   z-index: 1;
   transform: scale(0);
-  font-size: 50px;
+  font-size: 26px;
   width: 108%;
   background: linear-gradient(#ff79da, #9356dc);
   transition: opacity 1s, transform 1s;
@@ -89,17 +91,17 @@ h2 {
 **********************************************************/
 .menu {
   background-color: #f2f2f2;
-  border-radius: 116px 116px 0px 0px;
+  border-radius: 30px;
   position: relative;
   z-index: 2;
-  top: -124px;
+  top: -32px;
 }
 .palette {
   display: flex;
 }
 .palette i {
   display: flex;
-  font-size: 60px;
+  font-size: 26px;
   align-items: center;
 }
 .container_carte > .carte_menu:nth-child(2) {
@@ -140,32 +142,37 @@ h2 {
 }
 .carte_menu {
   border: 1px solid #f2f2f2;
-  border-radius: 30px;
-  font-size: 45px;
-  padding-left: 20px;
-  margin-left: 28px;
+  border-radius: 15px;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-left: 14px;
   background-color: white;
   display: flex;
-  align-items: end;
-  width: 92%;
-  height: 200px;
+  align-items: center;
+  width: 90%;
+  height: 68px;
 }
 .p1 {
   margin: 0;
   width: 800px;
-  height: 66%;
-  margin-bottom: 30px;
+  height: 90%;
+  margin-bottom: 8px;
   transition: width 1s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .p1 p {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .p3 {
   text-align: center;
+  margin-right: 20px;
   z-index: 5;
   width: 20%;
 }
@@ -183,35 +190,34 @@ h2 {
 }
 .fa-check-circle {
   color: white;
-  font-size: 50px;
+  font-size: 17px;
   transition: transform 1.5s;
 }
 .carte_menu:hover .translation {
   width: 130px;
-  height: 200px;
+  height: 68px;
   opacity: 1;
 }
 .carte_menu:hover .fa-check-circle {
   transform: rotate(360deg);
 }
-
 .carte_menu:hover .p1 {
-  width: 600px;
+  width: 500px;
 }
 .btn {
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 200px;
-  font-size: 36px;
-  height: 94px;
-  width: 38%;
+  font-size: 20px;
+  height: 50px;
+  width: 48%;
   color: white;
-  margin-left: 300px;
+  margin-left: 100px;
   margin-right: auto;
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 .btn:hover {
-  box-shadow: 3px 3px 10px 6px #c4bebf;
+  box-shadow: 1px 1px 3px 3px #c4bebf;
 }
 .commander {
   display: flex;
@@ -237,15 +243,21 @@ h2 {
   padding-bottom: 30px;
 }
 .logo_footer {
-  margin-left: 56px;
-  padding-top: 50px;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+.logo_f {
+  width: 50%;
+  height: 30px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
 }
 .rest_p {
   display: flex;
   height: 47px;
-  width: 36%;
-  margin-top: 20px;
-  margin-left: 30px;
+  width: 90%;
   text-decoration: none;
 }
 .rest_parte {
@@ -253,13 +265,11 @@ h2 {
   flex-direction: row;
   align-items: baseline;
   margin-left: 30px;
-  font-size: 30px;
+  font-size: 18px;
   color: white;
-  font-size: 24px;
 }
-.group {
-  display: flex;
-  flex-direction: column;
+.rest_parteB {
+  font-size: 24px;
 }
 .rest_parte i {
   margin-right: 10px;
@@ -269,50 +279,73 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.mention {
+.mention_p {
   display: flex;
   text-decoration: none;
-  margin-top: 20px;
-  margin-left: 30px;
+  width: 44%;
 }
-
 /************************************************************************
 ******************************Responsive*Tablette************************
 ************************************************************************/
-@media screen and (min-width: 813px) {
+@media screen and (min-width: 810px) {
   .logo {
     margin-top: 20px;
     margin-bottom: 12px;
+    margin-left: 186px;
   }
   .img_entete {
     height: 460px;
     object-fit: cover;
   }
   h1 {
-    font-size: 60px;
+    font-size: 50px;
     padding-left: 0;
   }
   h2 {
-    font-size: 35px;
+    font-size: 40px;
+  }
+  .palette i {
+    font-size: 34px;
   }
   .p1 {
-    margin-bottom: 22px;
+    margin-bottom: 0;
+    height: 90%;
+  }
+  .p1 p {
+    margin-top: 10px;
+  }
+  .coeur {
+    right: 100px;
+    top: 84px;
   }
   .carte_menu {
-    font-size: 25px;
-    height: 90px;
+    font-size: 30px;
+    height: 110px;
   }
   .carte_menu:hover .translation {
-    height: 90px;
+    height: 110px;
   }
   .fa-check-circle {
-    font-size: 32px;
+    font-size: 44px;
   }
   .btn {
     font-size: 30px;
     height: 68px;
     width: 28%;
-    margin-left: 360px;
+    margin-left: 292px;
+  }
+  /***************************************************************
+  **************************Footer*tablette***********************
+  ***************************************************************/
+  .rest_p {
+    margin-top: 10px;
+  }
+  .mention_p {
+    text-decoration: none;
+  }
+  .logo_f {
+    width: 50%;
+    height: 44px;
   }
 }
 /*****************************************************************
@@ -320,7 +353,7 @@ h2 {
 *****************************************************************/
 @media screen and (min-width: 1080px) {
   .logo {
-    margin-left: 200px;
+    margin-left: 400px;
   }
   .carte_menu {
     width: 60%;
@@ -330,6 +363,9 @@ h2 {
   .btn {
     margin-left: 576px;
   }
+  .carte_menu:hover .translation {
+    width: 214px;
+  }
   /**************************************************************
   *****************************Footer****************************
   **************************************************************/
@@ -337,6 +373,9 @@ h2 {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    height: 60px;
+    width: 30%;
+    margin-bottom: 20px;
   }
   .rest_p {
     width: 70%;
@@ -348,6 +387,9 @@ h2 {
     width: 284px;
   }
   .mention_p {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     margin-left: 0;
   }
   .group {
