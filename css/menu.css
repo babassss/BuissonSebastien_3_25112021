@@ -321,6 +321,7 @@ h2 {
   .carte_menu {
     font-size: 30px;
     height: 110px;
+    margin-left: 36px;
   }
   .carte_menu:hover .translation {
     height: 110px;

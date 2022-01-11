@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   background: grey;
-  opacity: 0.7;
+  opacity: 0.9;
   position: fixed;
   visibility: hidden;
   height: 100vh;
@@ -139,6 +139,7 @@ body {
 }
 .carte1:hover {
   background-color: #ff79da;
+  color: white;
 }
 .carte1 i:hover {
   color: #9356dc;
